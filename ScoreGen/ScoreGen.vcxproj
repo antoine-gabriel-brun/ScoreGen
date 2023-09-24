@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E700E50D-782F-4A2C-8264-96EC4A511CEA}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ScoreGen</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NEW_Pitch.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="NEW_Rhythms.cpp" />
+    <ClCompile Include="NEW_TEST.cpp" />
+    <ClCompile Include="NEW_Tools.cpp" />
+    <ClCompile Include="OF_SerialWithInterv.cpp" />
+    <ClCompile Include="ScoreGen.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2. Transformation.h" />
+    <ClInclude Include="4. G_Creations_3.h" />
+    <ClInclude Include="4. LSystem.h" />
+    <ClInclude Include="5. G_Creations_4_Dalle.h" />
+    <ClInclude Include="6. Clef.h" />
+    <ClInclude Include="6. G_Creations_5_MemoireInvent.h" />
+    <ClInclude Include="AllCreations.h" />
+    <ClInclude Include="NEW_Pitch.hpp" />
+    <ClInclude Include="1. TimeVariable.h" />
+    <ClInclude Include="2. Markov.h" />
+    <ClInclude Include="3. Sequences.h" />
+    <ClInclude Include="5. Signature.h" />
+    <ClInclude Include="Generators.h" />
+    <ClInclude Include="MathForMusic.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="MusicLinkFunctions.h" />
+    <ClInclude Include="2. CloudMaker.h" />
+    <ClInclude Include="2. G_Creations_1.h" />
+    <ClInclude Include="3. G_Creations_2_APSO.h" />
+    <ClInclude Include="3. G_MarkovOnBlocks.h" />
+    <ClInclude Include="3. Words.h" />
+    <ClInclude Include="4. Notes decorations.h" />
+    <ClInclude Include="2. Note, Rest, Tuplet.h" />
+    <ClInclude Include="3. Group.h" />
+    <ClInclude Include="4. For block.h" />
+    <ClInclude Include="1. Elements bases.h" />
+    <ClInclude Include="5. Block.h" />
+    <ClInclude Include="6. Score.h" />
+    <ClInclude Include="2. Rhythms.h" />
+    <ClInclude Include="1. Pitch.h" />
+    <ClInclude Include="NEW_Rhythms.hpp" />
+    <ClInclude Include="OF_SerialWithInterv.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_SquareFreeSequenceInRhythm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="quick.h" />
+    <ClInclude Include="NEW_Tools.hpp" />
+    <ClInclude Include="NEW_TEST.hpp" />
+    <ClInclude Include="1. Tools.h" />
+    <ClInclude Include="1. Generator.h" />
+    <ClInclude Include="1. G_Demos.h" />
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ScoreGenLib.h" />
+    <ClInclude Include="OF_Combinations.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_Descente.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_FractalSeq.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_Test.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_TestContraintes.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OF_ThueInRythm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="OptionsForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_Combinations.resx">
+      <DependentUpon>OF_Combinations.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_Descente.resx">
+      <DependentUpon>OF_Descente.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_FractalSeq.resx">
+      <DependentUpon>OF_FractalSeq.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_SerialWithInterv.resx">
+      <DependentUpon>OF_SerialWithInterv.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_SquareFreeSequenceInRhythm.resx">
+      <DependentUpon>OF_SquareFreeSequenceInRhythm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_TestContraintes.resx">
+      <DependentUpon>OF_TestContraintes.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_ThueInRythm.resx">
+      <DependentUpon>OF_ThueInRythm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <DependentUpon>OptionsForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

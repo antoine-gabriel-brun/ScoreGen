@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="%40 Ajouts">
+      <UniqueIdentifier>{1b6e5184-a22c-4d03-a48c-d8b18a7356a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\1. Forms">
+      <UniqueIdentifier>{f694d1c6-17b0-4a7d-a7db-9bdfd712efcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29">
+      <UniqueIdentifier>{cd5faab9-55c0-44f2-ac3e-b15e86d2d8cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\3. Scores">
+      <UniqueIdentifier>{84bb80f9-df55-4293-baba-8f2a82f801ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\3. Scores\1. Options forms">
+      <UniqueIdentifier>{87425ebe-85f6-4182-a1f6-d7beb4f150e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\3. Scores\1. Options forms\Base">
+      <UniqueIdentifier>{d966a357-8a8c-4346-ad85-ad092f3a4cb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib">
+      <UniqueIdentifier>{17df84a3-f1e9-4afb-b17f-955321fbc468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music">
+      <UniqueIdentifier>{ac1a79bc-9841-4bd2-b84e-ded0b550ac01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\4. Import export">
+      <UniqueIdentifier>{8703f366-d8ea-47b3-9638-6f4bc4b5ad11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic">
+      <UniqueIdentifier>{d6bebb71-b379-462b-8c4b-fdfc04c867ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\4. Library includes">
+      <UniqueIdentifier>{69848dd1-c515-488d-97b0-20bdeb8a369b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements">
+      <UniqueIdentifier>{ac7750fa-f675-44b5-ab4c-355e7ffbcfde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\3. Namespace Generators">
+      <UniqueIdentifier>{6ba61237-daba-4070-89ce-c396871f1fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music">
+      <UniqueIdentifier>{b9f352de-2a30-45e2-baef-3388a958c8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\1. Tools">
+      <UniqueIdentifier>{bcf43941-3ad5-42d4-a582-9c85d2f81f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\0. Test">
+      <UniqueIdentifier>{e14da0bb-1542-4230-bc63-a7fc5c706f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements">
+      <UniqueIdentifier>{31dfc0b8-e1ad-45bb-b0c4-7fc1a8e85bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\1. NEW_Pitch">
+      <UniqueIdentifier>{7fb18b14-bf72-4d71-bf75-79b9576c2aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\3. Scores\2. Créations">
+      <UniqueIdentifier>{a8f0d178-b10f-4f4b-bd5a-b45e544ba8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\2. NEW_Rhythms">
+      <UniqueIdentifier>{169b53e0-0fc2-4d72-8a6f-ffbb79d2a0cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\5. Links">
+      <UniqueIdentifier>{596db80a-e067-4e87-b921-49e2eb003dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\1. Tools and shared classes">
+      <UniqueIdentifier>{4b46ab32-3aea-46f7-87f8-31b6765e8d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements">
+      <UniqueIdentifier>{211304fe-8dd4-4f7c-ab86-61080cdf85fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ScoreGen.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="NEW_Tools.cpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\1. Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="NEW_TEST.cpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\0. Test</Filter>
+    </ClCompile>
+    <ClCompile Include="NEW_Pitch.cpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\1. NEW_Pitch</Filter>
+    </ClCompile>
+    <ClCompile Include="NEW_Rhythms.cpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\2. NEW_Rhythms</Filter>
+    </ClCompile>
+    <ClCompile Include="OF_SerialWithInterv.cpp">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <Filter>%40 Ajouts\1. Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsForm.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_Test.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_FractalSeq.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_TestContraintes.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_ThueInRythm.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_Descente.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_Combinations.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="1. G_Demos.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="2. G_Creations_1.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="3. G_Creations_2_APSO.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="1. Generator.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\3. Namespace Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="2. CloudMaker.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\3. Namespace Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="3. G_MarkovOnBlocks.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\3. Namespace Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="1. Elements bases.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="6. Score.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="2. Note, Rest, Tuplet.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="3. Group.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="4. For block.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="5. Block.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\3. Compound elements</Filter>
+    </ClInclude>
+    <ClInclude Include="quick.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\4. Import export</Filter>
+    </ClInclude>
+    <ClInclude Include="NEW_Tools.hpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\1. Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="NEW_TEST.hpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\0. Test</Filter>
+    </ClInclude>
+    <ClInclude Include="1. TimeVariable.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="MathForMusic.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="2. Markov.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="3. Sequences.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreGenLib.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\4. Library includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Generators.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\3. Namespace Generators</Filter>
+    </ClInclude>
+    <ClInclude Include="NEW_Pitch.hpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\1. NEW_Pitch</Filter>
+    </ClInclude>
+    <ClInclude Include="NEW_Rhythms.hpp">
+      <Filter>%40 Ajouts\2b. NEW_Library %28standard C++%29\1. Namespace NEW_Music\2. Single elements\2. NEW_Rhythms</Filter>
+    </ClInclude>
+    <ClInclude Include="1. Pitch.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="2. Rhythms.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="3. Words.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="4. Notes decorations.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="5. Signature.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="1. Tools.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\1. Tools and shared classes</Filter>
+    </ClInclude>
+    <ClInclude Include="2. Transformation.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\1. Tools and shared classes</Filter>
+    </ClInclude>
+    <ClInclude Include="4. G_Creations_3.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_SquareFreeSequenceInRhythm.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="AllCreations.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="OF_SerialWithInterv.h">
+      <Filter>%40 Ajouts\3. Scores\1. Options forms</Filter>
+    </ClInclude>
+    <ClInclude Include="5. G_Creations_4_Dalle.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+    <ClInclude Include="6. Clef.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\2. Single elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Music.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\5. Links</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicLinkFunctions.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\1. Namespace Music\5. Links</Filter>
+    </ClInclude>
+    <ClInclude Include="4. LSystem.h">
+      <Filter>%40 Ajouts\2a. Namespace ScoreGenLib\2. Namespace MathForMusic</Filter>
+    </ClInclude>
+    <ClInclude Include="6. G_Creations_5_MemoireInvent.h">
+      <Filter>%40 Ajouts\3. Scores\2. Créations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_FractalSeq.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_TestContraintes.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_ThueInRythm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_Descente.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_Combinations.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_SquareFreeSequenceInRhythm.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OF_SerialWithInterv.resx">
+      <Filter>Fichiers de ressources</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1409 @@
+  ScoreGen.MainForm.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_Combinations.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_Descente.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_FractalSeq.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_SerialWithInterv.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_SquareFreeSequenceInRhythm.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_TestContraintes.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OF_ThueInRythm.resources - Embedded, ContainedInManifestFile, 
+  ScoreGen.OptionsForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ScoreGen, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class ScoreGen.OptionsForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+  Methods:
+    getOptions(): PrivateScope, Public, HideBySig
+Class ScoreGen.OF_SerialWithInterv: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.Music.Rand: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    randomize(Int32): PrivateScope, Public, Static, HideBySig
+    randomize(): PrivateScope, Public, Static, HideBySig
+    double01(): PrivateScope, Public, Static, HideBySig
+    double_m1_p1(): PrivateScope, Public, Static, HideBySig
+    integer(Int32): PrivateScope, Public, Static, HideBySig
+    integer(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    chooseIn<int>(List`1): PrivateScope, Public, Static, HideBySig
+    chooseIn<cli::array<int >^>(Int32[][], Int32, Int32): PrivateScope, Public, Static, HideBySig
+    chooseIn<int>(Int32[]): PrivateScope, Public, Static, HideBySig
+    chooseIn<cli::array<G_APSO_Cloud::ModeNote ^ >^>(ModeNote[][]): PrivateScope, Public, Static, HideBySig
+    chooseIn<System::String ^>(String[]): PrivateScope, Public, Static, HideBySig
+    chooseIn<cli::array<int >^>(Int32[][]): PrivateScope, Public, Static, HideBySig
+    chooseIn<bool>(Boolean[]): PrivateScope, Public, Static, HideBySig
+    shuffle<int>(Int32[]): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Music.ReflectionTools: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getTypesByName(String): PrivateScope, Public, Static, HideBySig
+    getTypeByName_throwIfNotUnique(String): PrivateScope, Public, Static, HideBySig
+    getChildrenTypesByParentTypeName(String, Boolean(HasFieldMarshal)): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Music.Signature: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, ScoreGenLib.Music.Signature): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32[], Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Signature common : Public, Static
+    ScoreGenLib.Music.Signature cut : Public, Static
+  Properties:
+    Int32 duration_1024th 'get ' : 
+    System.String symbol 'get ' : 
+    Int32 denominator 'get ' : 
+    Int32[] numerators 'get ' : 
+    Int32 nbNumerators 'get ' : 
+  Methods:
+    get_nbNumerators(): PrivateScope, Public, HideBySig, SpecialName
+    get_numerators(): PrivateScope, Public, HideBySig, SpecialName
+    get_denominator(): PrivateScope, Public, HideBySig, SpecialName
+    get_symbol(): PrivateScope, Public, HideBySig, SpecialName
+    get_duration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Signature, Signature): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Signature, Signature): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Transformations.Transformation: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isInversion(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isDivision(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isCompound(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    inverse(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    op_Addition(Transformation, Transformation): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryPlus(): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(Transformation, Transformation): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(): PrivateScope, Public, HideBySig, SpecialName
+Class ScoreGenLib.Music.Transformations.Identity: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Transposition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double offset 'get ' : 
+  Methods:
+    get_offset(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Inversion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double center 'get ' : 
+  Methods:
+    get_center(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Retrograde: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Augmentation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.GenericFraction<int>): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.GenericFraction<int> ratio 'get ' : 
+  Methods:
+    get_ratio(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.GenericFraction<int>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 b    'get ' : 
+    Int32 a    'get ' : 
+  Methods:
+    get_a(): PrivateScope, Public, HideBySig, SpecialName
+    get_b(): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(GenericFraction<int>, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(Int32, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThanOrEqual(GenericFraction<int>, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Int32, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(GenericFraction<int>, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(GenericFraction<int>, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Int32, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(GenericFraction<int>, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(GenericFraction<int>, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(GenericFraction<int>, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Int32, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(GenericFraction<int>, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Int32, GenericFraction<int>): PrivateScope, Public, Static, HideBySig, SpecialName
+    isInteger(): PrivateScope, Public, HideBySig
+    gcd(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    lcm(Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Music.Transformations.Diminution: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.GenericFraction<int>): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.GenericFraction<int> ratio 'get ' : 
+  Methods:
+    get_ratio(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Multiplication: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double ratio 'get ' : 
+    Double center 'get ' : 
+  Methods:
+    get_center(): PrivateScope, Public, HideBySig, SpecialName
+    get_ratio(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Division: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double ratio 'get ' : 
+    Double center 'get ' : 
+  Methods:
+    get_center(): PrivateScope, Public, HideBySig, SpecialName
+    get_ratio(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Transformations.Compound: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformation
+    Void .ctor(ScoreGenLib.Music.Transformations.Transformation, ScoreGenLib.Music.Transformations.Transformation): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.Transformations.Transformation b 'get ' : 
+    ScoreGenLib.Music.Transformations.Transformation a 'get ' : 
+  Methods:
+    get_a(): PrivateScope, Public, HideBySig, SpecialName
+    get_b(): PrivateScope, Public, HideBySig, SpecialName
+    isIdentity(): PrivateScope, Public, Virtual, HideBySig
+    isTransposition(): PrivateScope, Public, Virtual, HideBySig
+    isInversion(): PrivateScope, Public, Virtual, HideBySig
+    isRetrograde(): PrivateScope, Public, Virtual, HideBySig
+    isAugmentation(): PrivateScope, Public, Virtual, HideBySig
+    isDiminution(): PrivateScope, Public, Virtual, HideBySig
+    isMultiplication(): PrivateScope, Public, Virtual, HideBySig
+    isDivision(): PrivateScope, Public, Virtual, HideBySig
+    isCompound(): PrivateScope, Public, Virtual, HideBySig
+    inverse(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Alteration: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.Alteration flatAndAHalf 'get ' : 
+    ScoreGenLib.Music.Alteration sharpAndAHalf 'get ' : 
+    ScoreGenLib.Music.Alteration halfFlat 'get ' : 
+    ScoreGenLib.Music.Alteration halfSharp 'get ' : 
+    ScoreGenLib.Music.Alteration doubleFlat 'get ' : 
+    ScoreGenLib.Music.Alteration doubleSharp 'get ' : 
+    ScoreGenLib.Music.Alteration flat 'get ' : 
+    ScoreGenLib.Music.Alteration sharp 'get ' : 
+    ScoreGenLib.Music.Alteration natural 'get ' : 
+  Methods:
+    get_natural(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_sharp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_flat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_doubleSharp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_doubleFlat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_halfSharp(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_halfFlat(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_sharpAndAHalf(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_flatAndAHalf(): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Alteration, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Alteration, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Alteration, Alteration): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Alteration, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Alteration, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Alteration, Alteration): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(Alteration): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Music.Transformations.Transformable<ScoreGenLib::Music::Pitch ^>: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    transform(Transformation): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Pitch: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Transformations.Transformable<ScoreGenLib::Music::Pitch ^>
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(SByte, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(SByte, Double, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(SByte, ScoreGenLib.Music.Alteration, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 octave 'get ' : 
+    ScoreGenLib.Music.Alteration alteration 'get ' : 
+    SByte step 'get ' IsSignUnspecifiedByte : 
+    Double midiValue 'get ' : 
+    SByte type 'get ' IsSignUnspecifiedByte : 
+  Methods:
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    isPitch(): PrivateScope, Public, HideBySig
+    isPercu(): PrivateScope, Public, HideBySig
+    isUnspecified(): PrivateScope, Public, HideBySig
+    isSpecified(): PrivateScope, Public, HideBySig
+    get_midiValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_step(): PrivateScope, Public, HideBySig, SpecialName
+    get_alteration(): PrivateScope, Public, HideBySig, SpecialName
+    get_octave(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_Inequality(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThan(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThan(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThan(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThan(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThan(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThan(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThanOrEqual(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThanOrEqual(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_LessThanOrEqual(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThanOrEqual(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThanOrEqual(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_GreaterThanOrEqual(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(Double): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(Pitch): PrivateScope, Public, HideBySig, SpecialName
+    op_Subtraction(Double): PrivateScope, Public, HideBySig, SpecialName
+    transposition(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    convertToMusicXML(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class ScoreGenLib.Music.RhythmFigure: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.RhythmFigure _256th : Public, Static
+    ScoreGenLib.Music.RhythmFigure _128th : Public, Static
+    ScoreGenLib.Music.RhythmFigure _64th : Public, Static
+    ScoreGenLib.Music.RhythmFigure _32nd : Public, Static
+    ScoreGenLib.Music.RhythmFigure _16th : Public, Static
+    ScoreGenLib.Music.RhythmFigure _eighth : Public, Static
+    ScoreGenLib.Music.RhythmFigure _quarter : Public, Static
+    ScoreGenLib.Music.RhythmFigure _half : Public, Static
+    ScoreGenLib.Music.RhythmFigure _whole : Public, Static
+    ScoreGenLib.Music.RhythmFigure _breve : Public, Static
+    ScoreGenLib.Music.RhythmFigure _long : Public, Static
+  Properties:
+    System.String name 'get ' : 
+    Int32 duration_1024th 'get ' : 
+  Methods:
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    get_duration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(RhythmFigure, RhythmFigure): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(RhythmFigure, RhythmFigure): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Rhythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.RhythmFigure, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.RhythmFigure): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isGrace 'get ' : 
+    Boolean isWholeBar 'get ' : 
+    Int32 duration_1024th 'get ' : 
+    Int32 dots 'get ' : 
+    ScoreGenLib.Music.RhythmFigure rhythmFigure 'get ' : 
+  Methods:
+    wholeBarRhythm(Int32): PrivateScope, Public, Static, HideBySig
+    graceRhythm(Rhythm): PrivateScope, Public, Static, HideBySig
+    get_rhythmFigure(): PrivateScope, Public, HideBySig, SpecialName
+    get_dots(): PrivateScope, Public, HideBySig, SpecialName
+    get_duration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    get_isWholeBar(): PrivateScope, Public, HideBySig, SpecialName
+    get_isGrace(): PrivateScope, Public, HideBySig, SpecialName
+    getSum(Int32): PrivateScope, Public, Static, HideBySig
+    op_Equality(Rhythm, Rhythm): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Rhythm, Rhythm): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(Int32, Boolean(HasFieldMarshal), Boolean(HasFieldMarshal), TupletRatio): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.TupletRatio: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.RhythmFigure, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 innerDuration_1024th 'get ' : 
+    Int32 duration_1024th 'get ' : 
+    Int32 normal 'get ' : 
+    Int32 actual 'get ' : 
+    ScoreGenLib.Music.Rhythm base 'get ' : 
+  Methods:
+    duplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    triplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    quadruplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    quintuplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    sextuplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    septuplet(RhythmFigure): PrivateScope, Public, Static, HideBySig
+    get_base(): PrivateScope, Public, HideBySig, SpecialName
+    get_actual(): PrivateScope, Public, HideBySig, SpecialName
+    get_normal(): PrivateScope, Public, HideBySig, SpecialName
+    get_duration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    get_innerDuration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(TupletRatio, TupletRatio): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(TupletRatio, TupletRatio): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Words.Words: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.String text 'get ' : 
+  Methods:
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isInNote(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ScoreGenLib.Music.Words.Direction: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Words
+  Methods:
+    convertToMusicXML(): PrivateScope, Public, Virtual, HideBySig
+    isInNote(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Words.Normal: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Direction
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.Music.Words.Dynamic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Direction
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean isStandardDynamic 'get ' : 
+  Methods:
+    get_isStandardDynamic(): PrivateScope, Public, HideBySig, SpecialName
+Class ScoreGenLib.Music.Words.Italic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Direction
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.Music.Words.Tempo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Direction
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double perMinute 'get ' : 
+    System.String beatUnit 'get ' : 
+  Methods:
+    get_beatUnit(): PrivateScope, Public, HideBySig, SpecialName
+    get_perMinute(): PrivateScope, Public, HideBySig, SpecialName
+Class ScoreGenLib.Music.Words.Comment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Direction
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.Music.Words.Lyrics: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Words.Words
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    isInNote(): PrivateScope, Public, Virtual, HideBySig
+    convertToMusicXML(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Articulation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Music.Articulation accent : Public, Static
+    ScoreGenLib.Music.Articulation strongAccent : Public, Static
+    ScoreGenLib.Music.Articulation staccato : Public, Static
+    ScoreGenLib.Music.Articulation tenuto : Public, Static
+    ScoreGenLib.Music.Articulation detachedLegato : Public, Static
+    ScoreGenLib.Music.Articulation staccatissimo : Public, Static
+    ScoreGenLib.Music.Articulation spiccato : Public, Static
+    ScoreGenLib.Music.Articulation scoop : Public, Static
+    ScoreGenLib.Music.Articulation plop : Public, Static
+    ScoreGenLib.Music.Articulation doit : Public, Static
+    ScoreGenLib.Music.Articulation falloff : Public, Static
+    ScoreGenLib.Music.Articulation breathMark : Public, Static
+    ScoreGenLib.Music.Articulation caesura : Public, Static
+    ScoreGenLib.Music.Articulation stress : Public, Static
+    ScoreGenLib.Music.Articulation unstress : Public, Static
+  Properties:
+    Boolean whenCutShouldStayWithRightNote 'get ' : 
+    System.String name 'get ' : 
+    Int32 id   'get ' : 
+  Methods:
+    get_id(): PrivateScope, Public, HideBySig, SpecialName
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    get_whenCutShouldStayWithRightNote(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Articulation, Articulation): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Articulation, Articulation): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Articulation+ArticulationsComparer: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  :System.Collections.Generic.Comparer`1[ScoreGenLib.Music.Articulation]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Compare(Articulation, Articulation): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.NoteDecorations: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[ScoreGenLib.Music.Articulation]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[ScoreGenLib.Music.Articulation], Boolean, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Articulation[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Articulation[], Boolean, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean slurEnd 'get ' : 
+    Boolean slurBeg 'get ' : 
+    Boolean tied 'get ' : 
+    ScoreGenLib.Music.Articulation[] articulations 'get ' : 
+  Methods:
+    get_articulations(): PrivateScope, Public, HideBySig, SpecialName
+    get_tied(): PrivateScope, Public, HideBySig, SpecialName
+    get_slurBeg(): PrivateScope, Public, HideBySig, SpecialName
+    get_slurEnd(): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(NoteDecorations, NoteDecorations): PrivateScope, Public, Static, HideBySig, SpecialName
+    cutArticulations(Articulation[]): PrivateScope, Public, Static, HideBySig
+    cut(): PrivateScope, Public, HideBySig
+    convertToMusicXML(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.LeftRight<cli::array<ScoreGenLib::Music::Articulation ^ >^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Articulation[], ScoreGenLib.Music.Articulation[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Articulation[] left : Public
+    ScoreGenLib.Music.Articulation[] right : Public
+Class ScoreGenLib.Music.LeftRight<ScoreGenLib::Music::NoteDecorations ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.NoteDecorations, ScoreGenLib.Music.NoteDecorations): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.NoteDecorations left : Public
+    ScoreGenLib.Music.NoteDecorations right : Public
+Class ScoreGenLib.Music.Element: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 duration_1024th 'get ' : 
+  Methods:
+    isNote(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isRest(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    isTuplet(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_duration_1024th(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    cutAt(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    transposition(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    resetTied(): PrivateScope, Public, Static, HideBySig
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(Element, Element): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Int32, Element): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Element, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ScoreGenLib.Music.NoteOrRest: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ScoreGenLib.Music.Element
+    Void .ctor(ScoreGenLib.Music.NoteOrRest, ScoreGenLib.Music.Tuplet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 duration_1024th 'get ' : 
+    ScoreGenLib.Music.Tuplet parentTuplet 'get ' : 
+    ScoreGenLib.Music.Words.Words[] words 'get ' : 
+    ScoreGenLib.Music.Rhythm rhythm 'get ' : 
+  Methods:
+    get_rhythm(): PrivateScope, Public, HideBySig, SpecialName
+    get_words(): PrivateScope, Public, HideBySig, SpecialName
+    get_parentTuplet(): PrivateScope, Public, HideBySig, SpecialName
+    isTuplet(): PrivateScope, Public, Virtual, HideBySig
+    get_duration_1024th(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class ScoreGenLib.Music.Note: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.NoteOrRest
+    Void .ctor(ScoreGenLib.Music.Note, ScoreGenLib.Music.Pitch): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Note, ScoreGenLib.Music.Pitch[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Note, ScoreGenLib.Music.Tuplet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch[], ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch, ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch[], ScoreGenLib.Music.NoteDecorations): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch, ScoreGenLib.Music.NoteDecorations): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch[], ScoreGenLib.Music.NoteDecorations, ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Pitch, ScoreGenLib.Music.NoteDecorations, ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean slurEnd 'get ' : 
+    Boolean slurBeg 'get ' : 
+    Boolean tied 'get ' : 
+    ScoreGenLib.Music.NoteDecorations decorations 'get ' : 
+    ScoreGenLib.Music.Pitch[] pitches 'get ' : 
+  Methods:
+    graceNote(Rhythm, Pitch[]): PrivateScope, Public, Static, HideBySig
+    graceNote(Rhythm, Pitch[], NoteDecorations): PrivateScope, Public, Static, HideBySig
+    getSum(Pitch[], Int32): PrivateScope, Public, Static, HideBySig
+    getSum(Pitch[], Int32, NoteDecorations, Words[]): PrivateScope, Public, Static, HideBySig
+    get_pitches(): PrivateScope, Public, HideBySig, SpecialName
+    get_decorations(): PrivateScope, Public, HideBySig, SpecialName
+    get_tied(): PrivateScope, Public, HideBySig, SpecialName
+    get_slurBeg(): PrivateScope, Public, HideBySig, SpecialName
+    get_slurEnd(): PrivateScope, Public, HideBySig, SpecialName
+    isNote(): PrivateScope, Public, Virtual, HideBySig
+    isRest(): PrivateScope, Public, Virtual, HideBySig
+    cutAt(Int32): PrivateScope, Public, Virtual, HideBySig
+    transposition(Double): PrivateScope, Public, Virtual, HideBySig
+    convertToMusicXML(Int32): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.LeftRight<cli::array<ScoreGenLib::Music::Element ^ >^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Element[], ScoreGenLib.Music.Element[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Element[] left : Public
+    ScoreGenLib.Music.Element[] right : Public
+Class ScoreGenLib.Music.Rest: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.NoteOrRest
+    Void .ctor(ScoreGenLib.Music.Rest, ScoreGenLib.Music.Tuplet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Rhythm, ScoreGenLib.Music.Words.Words[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    graceRest(Rhythm): PrivateScope, Public, Static, HideBySig
+    wholeBarRest(Int32): PrivateScope, Public, Static, HideBySig
+    wholeBarRest(Int32, Words[]): PrivateScope, Public, Static, HideBySig
+    getSum(Int32): PrivateScope, Public, Static, HideBySig
+    getSum(Int32, Words[]): PrivateScope, Public, Static, HideBySig
+    isNote(): PrivateScope, Public, Virtual, HideBySig
+    isRest(): PrivateScope, Public, Virtual, HideBySig
+    cutAt(Int32): PrivateScope, Public, Virtual, HideBySig
+    transposition(Double): PrivateScope, Public, Virtual, HideBySig
+    convertToMusicXML(Int32): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Tuplet: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Music.Element
+    Void .ctor(ScoreGenLib.Music.Tuplet, ScoreGenLib.Music.Pitch): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Tuplet, ScoreGenLib.Music.Pitch[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Tuplet, ScoreGenLib.Music.Pitch[][]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TupletRatio, System.Collections.Generic.List`1[ScoreGenLib.Music.NoteOrRest]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TupletRatio, ScoreGenLib.Music.NoteOrRest[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 innerDuration_1024th 'get ' : 
+    Int32 duration_1024th 'get ' : 
+    ScoreGenLib.Music.NoteOrRest[] elements 'get ' : 
+    Int32 nbElements 'get ' : 
+    ScoreGenLib.Music.TupletRatio ratio 'get ' : 
+  Methods:
+    get_ratio(): PrivateScope, Public, HideBySig, SpecialName
+    get_nbElements(): PrivateScope, Public, HideBySig, SpecialName
+    get_elements(): PrivateScope, Public, HideBySig, SpecialName
+    countNotes(): PrivateScope, Public, HideBySig
+    isNote(): PrivateScope, Public, Virtual, HideBySig
+    isRest(): PrivateScope, Public, Virtual, HideBySig
+    isTuplet(): PrivateScope, Public, Virtual, HideBySig
+    get_duration_1024th(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_innerDuration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    cutAt(Int32): PrivateScope, Public, Virtual, HideBySig
+    transposition(Double): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(Tuplet, Tuplet): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Tuplet, Tuplet): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(Int32): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.Music.Group: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Group, ScoreGenLib.Music.Pitch): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Group, ScoreGenLib.Music.Pitch[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Group, ScoreGenLib.Music.Pitch[][]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Element): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Element[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[ScoreGenLib.Music.Element]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 duration_1024th 'get ' : 
+    ScoreGenLib.Music.Element[] elements 'get ' : 
+    ScoreGenLib.Music.Element Item [Int32] 'get ' : 
+    Int32 nbElements 'get ' : 
+  Methods:
+    get_nbElements(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_elements(): PrivateScope, Public, HideBySig, SpecialName
+    get_duration_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    countNotes(): PrivateScope, Public, HideBySig
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Addition(List`1, Group): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Group, List`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Element[], Group): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Group, Element[]): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Group, Group): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Element, Group): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Group, Element): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Int32, Group): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Group, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    join(List`1): PrivateScope, Public, Static, HideBySig
+    join(Group[]): PrivateScope, Public, Static, HideBySig
+    transposition(Double): PrivateScope, Public, HideBySig
+    cutAt(Int32): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.LeftRight<ScoreGenLib::Music::Group ^>: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Group, ScoreGenLib.Music.Group): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Group left : Public
+    ScoreGenLib.Music.Group right : Public
+Class ScoreGenLib.Music.BarIndexAndTime: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, ScoreGenLib.Music.RhythmFigure, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, ScoreGenLib.Music.RhythmFigure): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 timeInBar_1024th 'get ' : 
+    Int32 bar  'get ' : 
+  Methods:
+    get_bar(): PrivateScope, Public, HideBySig, SpecialName
+    get_timeInBar_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    getInBlock(Block, RhythmFigure, Int32): PrivateScope, Public, Static, HideBySig
+    getInBlock(Block, RhythmFigure): PrivateScope, Public, Static, HideBySig
+    getInBlock(Block, Int32): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour requestSameSignatures : Public, Static
+    ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour adaptToCurrentSignatures : Public, Static
+    ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour byDefault : Public, Static
+  Methods:
+    op_Equality(TimeSignaturesOverwriteBehaviour, TimeSignaturesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(TimeSignaturesOverwriteBehaviour, TimeSignaturesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TimeSignaturesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Music.NotesOverwriteBehaviour: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Music.NotesOverwriteBehaviour requestNoCollisions : Public, Static
+    ScoreGenLib.Music.NotesOverwriteBehaviour cutIfNecessary : Public, Static
+    ScoreGenLib.Music.NotesOverwriteBehaviour byDefault : Public, Static
+  Methods:
+    op_Equality(NotesOverwriteBehaviour, NotesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(NotesOverwriteBehaviour, NotesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(NotesOverwriteBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Music.TooMuchPartsBehaviour: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Music.TooMuchPartsBehaviour requestEnoughParts : Public, Static
+    ScoreGenLib.Music.TooMuchPartsBehaviour addOnlyOnExistingParts : Public, Static
+    ScoreGenLib.Music.TooMuchPartsBehaviour addLackingParts : Public, Static
+    ScoreGenLib.Music.TooMuchPartsBehaviour byDefault : Public, Static
+  Methods:
+    op_Equality(TooMuchPartsBehaviour, TooMuchPartsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(TooMuchPartsBehaviour, TooMuchPartsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TooMuchPartsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Music.TooMuchBarsBehaviour: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Music.TooMuchBarsBehaviour requestEnoughBars : Public, Static
+    ScoreGenLib.Music.TooMuchBarsBehaviour addOnlyOnExistingBars : Public, Static
+    ScoreGenLib.Music.TooMuchBarsBehaviour addOneBigBarAtTheEnd : Public, Static
+    ScoreGenLib.Music.TooMuchBarsBehaviour addCommonBarsAtTheEnd : Public, Static
+    ScoreGenLib.Music.TooMuchBarsBehaviour addBarsAtTheEndWithLastTimeSignature : Public, Static
+    ScoreGenLib.Music.TooMuchBarsBehaviour byDefault : Public, Static
+  Methods:
+    op_Equality(TooMuchBarsBehaviour, TooMuchBarsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(TooMuchBarsBehaviour, TooMuchBarsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(TooMuchBarsBehaviour): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Music.WriteOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TooMuchPartsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TooMuchPartsBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.NotesOverwriteBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.NotesOverwriteBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour, ScoreGenLib.Music.NotesOverwriteBehaviour, ScoreGenLib.Music.TooMuchPartsBehaviour, ScoreGenLib.Music.TooMuchBarsBehaviour): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.TimeSignaturesOverwriteBehaviour timeSignaturesOverwriteBehaviour : Public
+    ScoreGenLib.Music.NotesOverwriteBehaviour notesOverwriteBehaviour : Public
+    ScoreGenLib.Music.TooMuchPartsBehaviour tooMuchPartsBehaviour : Public
+    ScoreGenLib.Music.TooMuchBarsBehaviour tooMuchBarsBehaviour : Public
+  Methods:
+    allStrict(): PrivateScope, Public, Static, HideBySig
+    allPermissive(): PrivateScope, Public, Static, HideBySig
+    allDefault(): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Music.Block: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Block): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.Group Item [Int32, Int32] 'get set' : 
+    ScoreGenLib.Music.Signature timeSignature [Int32] 'get set' : 
+    Int32 nbBars 'get set' : 
+    Int32 nbParts 'get set' : 
+  Methods:
+    get_nbParts(): PrivateScope, Public, HideBySig, SpecialName
+    set_nbParts(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_nbBars(): PrivateScope, Public, HideBySig, SpecialName
+    set_nbBars(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_timeSignature(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_timeSignature(Int32, Signature): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, Int32, Group): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    addParts(Int32): PrivateScope, Public, HideBySig
+    addPart(): PrivateScope, Public, HideBySig
+    addBars(Int32, String[]): PrivateScope, Public, HideBySig
+    addBars(Int32, String): PrivateScope, Public, HideBySig
+    addBars(Int32, Signature[]): PrivateScope, Public, HideBySig
+    addBars(Int32, Signature): PrivateScope, Public, HideBySig
+    addBar(String): PrivateScope, Public, HideBySig
+    addBar(Signature): PrivateScope, Public, HideBySig
+    insertParts(Int32, Int32): PrivateScope, Public, HideBySig
+    insertPart(Int32): PrivateScope, Public, HideBySig
+    insertBars(Int32, Int32, Signature[]): PrivateScope, Public, HideBySig
+    insertBars(Int32, Int32, Signature): PrivateScope, Public, HideBySig
+    insertBar(Int32, Signature): PrivateScope, Public, HideBySig
+    removeParts(Int32): PrivateScope, Public, HideBySig
+    removeParts(Int32, Int32): PrivateScope, Public, HideBySig
+    removePart(): PrivateScope, Public, HideBySig
+    removePart(Int32): PrivateScope, Public, HideBySig
+    removeBars(Int32): PrivateScope, Public, HideBySig
+    removeBars(Int32, Int32): PrivateScope, Public, HideBySig
+    removeBar(): PrivateScope, Public, HideBySig
+    removeBar(Int32): PrivateScope, Public, HideBySig
+    extractSubblock(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    extractParts(Int32, Int32): PrivateScope, Public, HideBySig
+    extractPart(Int32): PrivateScope, Public, HideBySig
+    extractBars(Int32, Int32): PrivateScope, Public, HideBySig
+    extractBar(Int32): PrivateScope, Public, HideBySig
+    copyPart(Int32, Int32): PrivateScope, Public, HideBySig
+    copyBar(Int32, Int32): PrivateScope, Public, HideBySig
+    write(Int32, Int32, Block): PrivateScope, Public, HideBySig
+    write(Int32, Int32, Block, WriteOptions): PrivateScope, Public, HideBySig
+    write(Int32, BarIndexAndTime, Block): PrivateScope, Public, HideBySig
+    write(Int32, BarIndexAndTime, Block, WriteOptions): PrivateScope, Public, HideBySig
+    transposition(Double): PrivateScope, Public, HideBySig
+    getDuration_1024th(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Clef: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Clef G1 : Public, Static
+    ScoreGenLib.Music.Clef G2 : Public, Static
+    ScoreGenLib.Music.Clef C1 : Public, Static
+    ScoreGenLib.Music.Clef C2 : Public, Static
+    ScoreGenLib.Music.Clef C3 : Public, Static
+    ScoreGenLib.Music.Clef C4 : Public, Static
+    ScoreGenLib.Music.Clef C5 : Public, Static
+    ScoreGenLib.Music.Clef F3 : Public, Static
+    ScoreGenLib.Music.Clef F4 : Public, Static
+    ScoreGenLib.Music.Clef F5 : Public, Static
+    ScoreGenLib.Music.Clef G2_m1 : Public, Static
+    ScoreGenLib.Music.Clef G2_m2 : Public, Static
+    ScoreGenLib.Music.Clef G2_p1 : Public, Static
+    ScoreGenLib.Music.Clef G2_p2 : Public, Static
+    ScoreGenLib.Music.Clef F4_m1 : Public, Static
+    ScoreGenLib.Music.Clef F4_m2 : Public, Static
+    ScoreGenLib.Music.Clef F4_p1 : Public, Static
+    ScoreGenLib.Music.Clef F4_p2 : Public, Static
+  Properties:
+    Int32 octaveChange 'get ' : 
+    Int32 line 'get ' : 
+    System.String sign 'get ' : 
+  Methods:
+    get_sign(): PrivateScope, Public, HideBySig, SpecialName
+    get_line(): PrivateScope, Public, HideBySig, SpecialName
+    get_octaveChange(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(Clef, Clef): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Clef, Clef): PrivateScope, Public, Static, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.Score: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Block): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Block, ScoreGenLib.Music.Clef[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Music.Clef[] clefs 'get ' : 
+    ScoreGenLib.Music.Block block 'get ' : 
+    Int32 nbBars 'get ' : 
+    Int32 nbParts 'get ' : 
+  Methods:
+    get_nbParts(): PrivateScope, Public, HideBySig, SpecialName
+    get_nbBars(): PrivateScope, Public, HideBySig, SpecialName
+    get_block(): PrivateScope, Public, HideBySig, SpecialName
+    get_clefs(): PrivateScope, Public, HideBySig, SpecialName
+    bestClefs(): PrivateScope, Public, HideBySig
+    op_Implicit(): PrivateScope, Public, HideBySig, SpecialName
+    convertToMusicXML(): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Music.ScoreAndInfos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Score): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Score, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Score, System.Drawing.Bitmap): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Music.Score, System.Drawing.Bitmap, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    ScoreGenLib.Music.Score score : Public
+    System.Drawing.Bitmap image : Public
+    System.String comments : Public
+Class ScoreGenLib.MathForMusic.TimeVariable: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at(Double, Int32): PrivateScope, Public, HideBySig
+    at(Double): PrivateScope, Public, HideBySig
+    image(Int32, Int32): PrivateScope, Public, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_ConstMulti: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double[], Double[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_ConstTwice: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable_ConstMulti
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.MathForMusic.TimeVariable_Const: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_LinMulti: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double[], Double[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_LinTwice: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable_LinMulti
+    Void .ctor(Double, Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGenLib.MathForMusic.TimeVariable_Lin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_Sigm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.TimeVariable_Exp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.MathForMusic.TimeVariable
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    at_internal(Double): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGenLib.MathForMusic.Markov: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Double[,]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, ScoreGenLib.MathForMusic.TimeVariable[,], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 nbGeneratedElements 'get ' : 
+    Int32 order 'get ' : 
+  Methods:
+    get_order(): PrivateScope, Public, HideBySig, SpecialName
+    get_nbGeneratedElements(): PrivateScope, Public, HideBySig, SpecialName
+    initialize(): PrivateScope, Public, HideBySig
+    initialize(Int32[]): PrivateScope, Public, HideBySig
+    initialize(Int32): PrivateScope, Public, HideBySig
+    next(Double, Int32): PrivateScope, Public, HideBySig
+    next(Double): PrivateScope, Public, HideBySig
+Class ScoreGenLib.MathForMusic.LSystem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setRule(Int32, Int32[]): PrivateScope, Public, HideBySig
+    generate(Int32[], Int32): PrivateScope, Public, HideBySig
+    generate(Int32, Int32): PrivateScope, Public, HideBySig
+Class ScoreGenLib.Generators.Generator: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    description(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    generate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition unspecified : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onlyOnWhole : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onlyOnHalf : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onlyOnQuarter : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onlyOnEighth : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onlyOn16th : Public, Static
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition onAny32nd : Public, Static
+  Properties:
+    ScoreGenLib.Music.RhythmFigure rhythm 'get ' : 
+  Methods:
+    get_rhythm(): PrivateScope, Public, HideBySig, SpecialName
+    op_Equality(PatternPossiblePosition, PatternPossiblePosition): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(PatternPossiblePosition, PatternPossiblePosition): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(PatternPossiblePosition): PrivateScope, Public, Static, HideBySig, SpecialName
+Class ScoreGenLib.Generators.CloudMaker.Pattern: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Element[], ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition possiblePosition 'get ' : 
+    Int32 dur_1024th 'get ' : 
+    ScoreGenLib.Music.Element[] elements 'get ' : 
+  Methods:
+    get_elements(): PrivateScope, Public, HideBySig, SpecialName
+    get_dur_1024th(): PrivateScope, Public, HideBySig, SpecialName
+    get_possiblePosition(): PrivateScope, Public, HideBySig, SpecialName
+Class ScoreGenLib.Generators.CloudMaker.PatternWithProba: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Music.Element[], ScoreGenLib.Generators.CloudMaker.PatternPossiblePosition, ScoreGenLib.MathForMusic.TimeVariable): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ScoreGenLib.Generators.CloudMaker.Pattern, ScoreGenLib.MathForMusic.TimeVariable): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ScoreGenLib.MathForMusic.TimeVariable proba 'get ' : 
+    ScoreGenLib.Generators.CloudMaker.Pattern pattern 'get ' : 
+  Methods:
+    get_pattern(): PrivateScope, Public, HideBySig, SpecialName
+    get_proba(): PrivateScope, Public, HideBySig, SpecialName
+    chooseRandomlyIn(PatternWithProba[], Double, Int32): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Generators.CloudMaker.PatternWithPos: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ScoreGenLib.Generators.CloudMaker.Pattern, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 pos_1024th 'get ' : 
+    ScoreGenLib.Generators.CloudMaker.Pattern pattern 'get ' : 
+  Methods:
+    get_pattern(): PrivateScope, Public, HideBySig, SpecialName
+    get_pos_1024th(): PrivateScope, Public, HideBySig, SpecialName
+Class ScoreGenLib.Generators.CloudMaker.CloudMaker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, ScoreGenLib.Music.RhythmFigure, ScoreGenLib.MathForMusic.TimeVariable): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addPattern(PatternWithProba): PrivateScope, Public, HideBySig
+    createCloud(): PrivateScope, Public, HideBySig
+    cloudToBlock(PatternWithPos[]): PrivateScope, Public, Static, HideBySig
+Class ScoreGenLib.Generators.G_MarkovOnBlocks: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+  Properties:
+    Int32 order 'get ' : 
+  Methods:
+    get_order(): PrivateScope, Public, HideBySig, SpecialName
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGen.OF_Test: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class G_DemoScale_AllExplicit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoScale_WithTranspositions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoTexts: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoOptions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoPercussions: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoOtherFeatures: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoCloudMaker: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoMarkovOnNotes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoMarkovOnBlocks: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.G_MarkovOnBlocks
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoScale: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoCut: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_DemoLSystem: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGen.OF_FractalSeq: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGen.OF_Descente: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGen.OF_Descente+NNote: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Int32, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 pitch : Public
+    Double moment : Public
+Class ScoreGen.OF_TestContraintes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGen.OF_ThueInRythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ScoreGen.OF_SquareFreeSequenceInRhythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class G_FractalSeq: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_RFTW_Descente: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Contraintes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_ThueInRythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_SquareFreeSequenceInRhythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGen.OF_Combinations: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGen.OptionsForm
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class G_APSO_Sierpinski_common: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+  Methods:
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Sierpinski_common+DynamicAndPosition: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(System.String, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String dynamic : Public
+    Int32 position : Public
+Class G_APSO_Sierpinski_1_Strings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :G_APSO_Sierpinski_common
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Sierpinski_2_Strings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :G_APSO_Sierpinski_common
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Sierpinski_3_Strings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :G_APSO_Sierpinski_common
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Sierpinski_4_Strings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :G_APSO_Sierpinski_common
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Cloud: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Sculpture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Gliss: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_Combinations: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_JumpGliss1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_JumpGliss2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_APSO_GrandMarkov: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.G_MarkovOnBlocks
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+Class G_Cloches: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_SequenceFinale: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_PianoStudies1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_SoupeTonale: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+    createCloudMaker(Int32): PrivateScope, Public, HideBySig
+    modifyElement(Pattern, Int32, Int32, Random): PrivateScope, Public, HideBySig
+    modifyElements(Element[], Int32, Int32, Random): PrivateScope, Public, HideBySig
+    fitToScale(Pitch, Int32): PrivateScope, Public, HideBySig
+Class G_EOC_Rythmique: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_FreqsNotes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_SerialWithInterv: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Polyrhythm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Dalle_Prologh: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Dalle_DalChords: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Memoire_BeforeExamples_Markov: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_StructureDesExemples: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Bartok: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_ChromaFreq: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Automations: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Melody: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_Accel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_InventionChutePizzicati: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class G_QuizzMetaclassique: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ScoreGenLib.Generators.Generator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    name(): PrivateScope, Public, Virtual, HideBySig
+    description(): PrivateScope, Public, Virtual, HideBySig
+    generate(): PrivateScope, Public, Virtual, HideBySig
+Class ScoreGen.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

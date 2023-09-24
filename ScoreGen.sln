@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScoreGen", "ScoreGen\ScoreGen.vcxproj", "{E700E50D-782F-4A2C-8264-96EC4A511CEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E700E50D-782F-4A2C-8264-96EC4A511CEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E700E50D-782F-4A2C-8264-96EC4A511CEA}.Debug|Win32.Build.0 = Debug|Win32
+		{E700E50D-782F-4A2C-8264-96EC4A511CEA}.Release|Win32.ActiveCfg = Release|Win32
+		{E700E50D-782F-4A2C-8264-96EC4A511CEA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
